@@ -1,12 +1,17 @@
+import { Link } from "@inertiajs/react";
 import React from "react";
 
-const Layout = () => {
+const Layout = ({ children }) => {
     return (
         <>
             <header>
                 <nav>
-                    <a className="" href=""></a>
-                    <a className="" href=""></a>
+                    <Link className="nav-link" href="/">
+                        Home
+                    </Link>
+                    <Link className="nav-link" href="/posts/create">
+                        Create
+                    </Link>
                 </nav>
             </header>
 
